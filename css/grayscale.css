@@ -453,3 +453,10 @@ body {
   max-width: 100%;
   margin-top: 9px;
 }
+.certs img {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}

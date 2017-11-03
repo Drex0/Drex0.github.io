@@ -103,8 +103,12 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About <span class="fa fa-hand-o-down"></span> this guy</h2>
                 <img src="img/portfolio-pat2.jpg" class="img-circle img-responsive center-block portfolio_pic">
-                <p>I have worked in the Audio/Video industry for 13 years integrating systems in Government, Corporate, Education, Hospitality, and Retail. I've been involved in everything from designing systems, installation, rack fabrication, audio and control programming. I am proficient in many different software and hardware platforms, below are a few I use regularly. I am employed at <a href="https://www.harman.com/" target="_blank">Harman International</a> and specialize in <a href="http://www.bssaudio.com" target="_blank">BSS Audio</a> supporting Large Venue arenas and facilities.</p>
-
+                <p>I have worked in the Audio/Video industry for 14 years integrating systems in Government, Corporate, Education, Hospitality, and Retail. I've been involved in everything from designing systems, installation, rack fabrication, audio and control programming. I am proficient in many different software and hardware platforms, below are a few I use regularly. I am employed at <a href="https://www.harman.com/" target="_blank">Harman International</a> and specialize in <a href="http://www.bssaudio.com" target="_blank">BSS Audio</a>.</p>
+                <div class="certs">
+                    <img src="img/HPU_HCAP_Programming.png" alt="Audio Programming Cert">
+                    <img src="img/HPU_HCCP_Programming.png" alt="AMX Programming Cert">
+                    <img src="img/HPU_HCNP_Commissioning.png" alt="SVSI Networking Cert">
+                </div>
                 <div class="">
                     <a class="btn btn-default btn-lg" href="http://www.crestron.com" target="_blank"> Crestron</a> 
                     <a class="btn btn-default btn-lg" href="http://www.amx.com" target="_blank"> AMX</a>
@@ -113,7 +117,7 @@
                     <a class="btn btn-default btn-lg" href="https://www.qsc.com/systems/products/q-sys-platform/" target="_blank"> QSYS</a>
                     <a class="btn btn-default btn-lg" href="http://www.biamp.com/default.aspx" target="_blank"> Biamp</a>
                 </div>              
-        </div>
+        </div>        
     </section>
 
     <!-- Download Section -->
@@ -182,11 +186,11 @@
                         <div class="col-sm-8">
                             <div class="thumb-caption">
                               <h3>BSS and AMX</h3>
-                              <h6>The existing #include file for AMX control of BSS devices, didn't have the DI String protocol or the ability to control the BLU103 so I added these features and created an example file based off a conference room at Harman.</h6>
+                              <h6>The existing #include file for AMX control of BSS devices, didn't have the DI String protocol or the ability to control the BLU103 so I added these features.</h6>
                             </div>     
                             <div class="row">    
                                 <div class="col-sm-6">
-                                    <p><a href="downloads/HarmanPZ.zip" class="btn btn-default btn-block btn-lg" role="button">Download</a></p>
+                                    <p><a href="downloads/BSS_AMX_AXI.zip" class="btn btn-default btn-block btn-lg" role="button">Download</a></p>
                                 </div>
                                 <div class="col-sm-6">
                                     <p></p>
@@ -210,11 +214,11 @@
                 <div class="well">
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="pop">
+                            
                                 <div class="thumbnail thumbs">
                                     <img src="img/AA_LDS_Website.PNG" alt="AA LDS Website">
                                 </div>
-                            </div>
+                            
                         </div>
                         <div class="col-sm-8">
                             <div class="thumb-caption">
@@ -233,11 +237,11 @@
                 <div class="well">
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="pop">
+                            
                                 <div class="thumbnail thumbs">
                                     <img src="img/table.JPG" alt="Table">
                                 </div>
-                            </div>
+                            
                         </div>
                         <div class="col-sm-8">
                             <div class="thumb-caption">
@@ -301,31 +305,8 @@
     <!-- Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
-    <!-- Isotope responsive grid for images -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-
     <!-- quote generator -->
     <script src="js/quotegen.js"></script>
-
-    <script>
-
-        // Image Modal popup
-        $(function() {
-            $('.pop').on('click', function() {
-                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-                $('#imagemodal').modal('show');   
-            });     
-        });
-
-        // After images have loaded activate isotope for grid
-        $('#posts').imagesLoaded( function(){
-            $('#posts').isotope({
-            itemSelector : '.item'
-            });
-        });  
-        
-    </script>
 
 </body>
 
