@@ -268,15 +268,28 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
+/*
 .projects-section {
   width: 100%;
-  padding: 50px 0;
+  padding: 20px 0;
   color: white;
-  background-color: black;
+  background-color: #53524f;
+  background: url(../img/aa_103.PNG) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+*/
+.projects-section {
+  background-color: #53524f;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(255,255,255,.3) 2px, transparent 3px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(255,255,255,.3) 2px, transparent 3px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(255,255,255,.3) 2px, transparent 3px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(255,255,255,.3) 2px, transparent 3px, transparent 100%);
+  -webkit-background-size: 25px 25px;
+  -moz-background-size: 25px 25px;
+  background-size: 25px 25px;
 }
 
 #map {
@@ -459,4 +472,41 @@ body {
   height: auto;
   padding-top: 15px;
   padding-bottom: 20px;
+}
+pre {
+  font-size: 90%;
+  line-height: 1.2em;
+  font-family: "Courier 10 Pitch", Courier, monospace; 
+  white-space: pre; 
+  white-space: pre-wrap; 
+  white-space: -moz-pre-wrap; 
+  white-space: -o-pre-wrap; 
+
+  height:1%;
+  width: auto;
+  display: block;
+  clear: both;
+  color: #555555;
+  padding: 1em 1em;
+  margin: auto 40px auto 40px;
+  background: #f4f4f4;
+  border: solid 1px #e1e1e1
+} 
+code { 
+  font-size: 90%;
+  line-height: 1.2em;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+  display: inline; 
+  color: #555555;
+  padding: 1em, 1em;
+  background: #f4f4f4;
+}
+.js-copybtn {
+  margin: auto;
+}
+
+.codecopy::selection {
+  background-color: #1d9b6c;
+  color: #fff;
 }

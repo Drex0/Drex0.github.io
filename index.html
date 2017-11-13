@@ -199,6 +199,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="well">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="thumbnail thumbs">
+                                <img src="img/bss_node-red.png" alt="Node Red Example">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="thumb-caption">
+                              <h3>BSS and Node-Red</h3>
+                              <h6>Example flow to hard code mute controls into Node-Red. There are many ways to do this here is one way.</h6>
+                              <h6>I am working on a config module so check back later if you need more features.</h6>
+                              
+                              <pre>                                
+                                <code class="codecopy">[{"id":"93bed85f.4b55a8","type":"function","z":"9030ce.c4382f3","name":"Mute FB","func":"msg.payload = msg.payload[15];\nif (msg.payload ==0) {\n    node.status({fill:\"white\",shape:\"ring\",text:\"Unmuted\"});\n} else if(msg.payload ==1) {\n    node.status({fill:\"red\",shape:\"ring\",text:\"Muted\"});\n}\nreturn msg;","outputs":1,"noerr":0,"x":680,"y":240,"wires":[["193d7ed7.142ba1"]]},{"id":"193d7ed7.142ba1","type":"debug","z":"9030ce.c4382f3","name":"","active":true,"console":"false","complete":"payload","x":870,"y":240,"wires":[]},{"id":"170c7e10.27d0b2","type":"tcp request","z":"9030ce.c4382f3","server":"10.34.66.69","port":"1023","out":"time","splitc":"0","name":"BSS","x":530,"y":240,"wires":[["93bed85f.4b55a8"]]},{"id":"a35bfb9e.f46ab8","type":"comment","z":"9030ce.c4382f3","name":"BSS fixed control with Subscribe","info":"These are fixed commands for muting/unmuting. Strings are pulled from Audio Architects 3rd Party Controller. \n\n- Feedback string is piggy backed with the set command.\n    - Doesn't update from unsolicited feedback.\n- Commands from buffer in function are in hex.","x":410,"y":160,"wires":[]},{"id":"55e77944.b38a78","type":"inject","z":"9030ce.c4382f3","name":"Muted","topic":"","payload":"true","payloadType":"bool","repeat":"","crontab":"","once":false,"x":170,"y":220,"wires":[["dec7b2f4.86a0e"]]},{"id":"22b4680d.27a1a8","type":"inject","z":"9030ce.c4382f3","name":"Unmuted","topic":"","payload":"false","payloadType":"bool","repeat":"","crontab":"","once":false,"x":160,"y":260,"wires":[["dec7b2f4.86a0e"]]},{"id":"dec7b2f4.86a0e","type":"function","z":"9030ce.c4382f3","name":"Mute State Control","func":"if(msg.payload==0){\n    msg.payload = new Buffer([0x02, 0x88, 0x00, 0x1B, 0x82, 0x1B, 0x83, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x89, 0x03, 0x02, 0x89, 0x00, 0x1B, 0x82, 0x1B, 0x83, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x88, 0x03]);\n    node.status({fill:\"white\",shape:\"ring\",text:\"Unmuted\"});\n}else if(msg.payload==1){\n    msg.payload = new Buffer([0x02, 0x88, 0x00, 0x1B, 0x82, 0x1B, 0x83, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x88, 0x03, 0x02, 0x89, 0x00, 0x1B, 0x82, 0x1B, 0x83, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x88, 0x03]);\n    node.status({fill:\"red\",shape:\"ring\",text:\"Muted\"});\n}else {\n    msg.payload = \"Check Input\";\n}\nreturn msg;","outputs":1,"noerr":0,"x":350,"y":240,"wires":[["170c7e10.27d0b2"]]}]</code>
+                              </pre>
+                            </div>                              
+                        </div>
+                    </div>
+                </div>
               
             </div>
         </div>
