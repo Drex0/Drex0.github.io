@@ -281,6 +281,10 @@ a:focus {
   -o-background-size: cover;
 }
 */
+
+/*
+Dotted background in project section
+*/
 .projects-section {
   background-color: #53524f;
   background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.3), rgba(255,255,255,.3) 2px, transparent 3px, transparent 100%);
