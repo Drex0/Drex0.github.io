@@ -6,8 +6,8 @@ var quotes = [
 	"Consultant for common sense. This is how I will make my millions. -PZ",
 	"It\'s been proven over and over, happy employees work harder. You should hire me strictly for my sense of humor. -PZ",
 	"I don\'t have time to explain why I don\'t have time. ---",
-	"When somebody hands me panties and a brassiere iwth a note, I gotta read it. -Frank Zappa",
-	"You know it's time to rock when ol' glory drops! -Kid Rock"
+	"When somebody hands me panties and a brassiere with a note, I gotta read it. -Frank Zappa",
+	"You know it\'s time to rock when ol\' glory drops! -Kid Rock"
 ]
 
 function newQuote() {
