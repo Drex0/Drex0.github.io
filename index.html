@@ -144,6 +144,30 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="thumbnail thumbs">
+                                <img src="img/Pi_Slideshow.PNG" alt="Pi Slideshow">
+                            </div>                            
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="thumb-caption">
+                                <h3>Pi Slideshow Inventory</h3>
+                                <h6>We have multiple Raspberry Pi's that run slideshows through out the office. They have a custom api that monitors certain directories. It looks
+                                    for certain files in these directories that tell it when to cache new images for the slides or reboot the unit. The Pi's also report in so we can see
+                                    when they were last updated.
+                                </h6>
+                                <br>
+                                <h6>I made a simple web app to pull the inventory list and tell me if the units are currently online and also offer a few controls of the units. I would like to add
+                                    a drag and drop area so I can easily upload new files here.
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="well">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="thumbnail thumbs">
                                 <img src="img/dc1.PNG" alt="Grafana Dashboard">
                             </div>
                             <div class="thumbnail thumbs">
@@ -153,9 +177,9 @@
                         <div class="col-sm-8">
                             <div class="thumb-caption">
                                 <h3>Grafana Dashboards</h3>
-                                <h6>I built a few Grafana dashboards to monitor Data Center temperatures, PDUs, etc. It provides alerts via SMTP. The layour view is 
+                                <h6>I built a few Grafana dashboards to monitor our Datacenter environment. It pulls information via SNMP and provides alerts through an SMTP relay. The layout view is 
                                     an SVG map of all the temperature probes in the room and update based on the temperature value. The green indicates temp is normal. 
-                                    Red would be a warning or alert. Yellow or Blue would be an alert.
+                                    Red would be an alert and Yellow or Blue would be a warning.
                                 </h6>
                                 <br>
                                 <h6>I used Telegraf to gather
@@ -187,8 +211,7 @@
                                     <p></p>
                                 </div>
                             </div>
-                            </div>
-                                                                                       
+                            </div>                                                                                       
                         </div>
                     </div>
                 </div>
