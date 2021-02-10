@@ -472,7 +472,7 @@ body {
 }
 .logos img {
   display: inline-block;
-  width: 8%;
+  max-width: 8%;
   height: auto;
   padding-bottom: 20px;
   margin-right: 5px;
