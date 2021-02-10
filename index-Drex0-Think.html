@@ -21,7 +21,7 @@
     <title>Zachman Portfolio</title>
 
     <!-- Favicon -->
-    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' >
+    <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,82 +44,12 @@
     <![endif]-->
 
 </head>
-
 <style>
-    .bottom_align{
-        display: inline-block;
-        height: 100%;
-        vertical-align: bottom;
-        width: 0px;
+    .span-inlineblock img{
+        display: inline;
     }
-    .thumb-caption p{
-        font-style: italic;
-        font-size: small;
-    }
-    .circle{
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-    }
-    .htmllang{
-        border: 1px solid #e44b23;
-        background-color: #e44b23;
-    }
-    .csharp {
-        border: 1px solid #178600;
-        background-color: #178600;
-    }
-    .xamarin{
-        border: 1px solid purple;
-        background-color: purple;
-    }
-    .wpf {
-        border: 1px solid purple;
-        background-color: purple;
-    }
-    .javascript{
-        border: 1px solid #f1e05a;
-        background-color: #f1e05a;
-    }
-    .nodejs{
-        border: 1px solid black;
-        background-color: black;
-    }
-    .python{
-        border: 1px solid #3572A5;
-        background-color: #3572A5;
-    }
-    .css{
-        border: 1px solid #563d7c;
-        background-color: #563d7c;
-    }
-    .svg{
-        border: 1px solid #563d7c;
-        background-color: #563d7c;
-    }
-    .autoit{
-        border: 1px solid #1C3552;
-        background-color: #1C3552;
-    }
-    .netlinx{
-        border: 1px solid #0aa0ff;
-        background-color: #0aa0ff;
-    }
-    .simplplus{
-        border: 1px solid #043c5f;
-        background-color: #043c5f;
-    }
-    .json{
-        border: 1px solid #40d47e;
-        background-color: #40d47e;
-    }    
-    .description {
-        padding-bottom: 10px;
-    }
-    
-</style>
 
+</style>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="newQuote()">
 
     <!-- Navigation -->
@@ -167,7 +97,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading"></h1>
-                        <p class="intro-text">Showcasing designs, projects, collaborations, and accolades.
+                        <p class="intro-text">Showcasing designs, projects, collaborations, accolades, and beauties.
+                            <br>Created for your entertainment.</p>
                     </div>
                 </div>
             </div>
@@ -186,20 +117,7 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About <span class="fa fa-hand-o-down"></span> this guy</h2>
                 <img src="img/portfolio-pat2.jpg" class="img-circle img-responsive center-block portfolio_pic">
-                <p>
-                    I recently graduated from  <a href="https://www.wgu.edu/" target="_blank">Western Governors University</a> with a BS in Software Development. I went through the C# program and enjoyed pushing myself. I was also able to work in HTML, CSS, Javascript, and Python.
-                </p>
-                <div class="logos">
-                    <img src="img/csharp.png" alt="csharp logo">
-                    <img src="img/Python-logo-notext.svg" alt="python logo">
-                    <img src="img/HTML5_Logo.svg" alt="html5 logo">
-                    <img src="img/CSS3_logo_and_wordmark.svg" alt="css3 logo">
-                    <img src="img/Javascript-shield.svg" alt="js logo">
-                    <a href="https://www.freecodecamp.org/certification/patz/responsive-web-design" target="_blank"><img src="img/fcc_primary_small.svg" alt="freecodecamp logo"></a>
-                </div>
-                <hr>
-                <p>I started my professional career in the Audio/Video industry. For 14 years I integrated systems in Government, Corporate, Education, Hospitality, and Retail. I've been involved in everything from designing systems, installation, rack fabrication, audio and control programming.
-                </p>
+                <p>I have worked in the Audio/Video industry for 14 years integrating systems in Government, Corporate, Education, Hospitality, and Retail. I've been involved in everything from designing systems, installation, rack fabrication, audio and control programming. I am proficient in many different software and hardware platforms, below are a few I use regularly. I am employed at <a href="https://www.harman.com/" target="_blank">Harman International</a> and specialize in <a href="http://www.bssaudio.com" target="_blank">BSS Audio</a>.</p>
                 <div class="certs">
                     <img src="img/HPU_HCAP_Programming.png" alt="Audio Programming Cert">
                     <img src="img/HPU_HCCP_Programming.png" alt="AMX Programming Cert">
@@ -212,17 +130,8 @@
                     <a class="btn btn-default btn-lg" href="http://www.bssaudio.com" target="_blank"> BSS</a>
                     <a class="btn btn-default btn-lg" href="https://www.qsc.com/systems/products/q-sys-platform/" target="_blank"> QSYS</a>
                     <a class="btn btn-default btn-lg" href="http://www.biamp.com/default.aspx" target="_blank"> Biamp</a>
-                </div>       
-                <hr>  
-                <p>
-                    I have been in the IT industry for ~5 years. I am employed at <a href="https://www.l3harris.com" target="_blank">L3Harris</a> as a Systems Administrator and I work in the Data Center supporting the physical infrasturcture and backup systems.
-                </p>
-                <div class="certs">
-                    <img src="img/logoprojectplus.svg" alt="project plus logo">
-                    <img src="img/logoaplus.svg" alt="a plus logo">
-                </div>
-            </div> 
-        </div>       
+                </div>              
+        </div>        
     </section>
 
     <!-- Projects Section -->
@@ -239,113 +148,31 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="thumbnail thumbs">
-                                <img src="img/studentapp.png" alt="student app overview">
+                                <span class="span-inlineblock">
+                                    <img src="img/term_view.PNG" alt="Term View">
+                                    <img src="img/course_view.PNG" alt="Course View">
+                                </span>
                             </div>
                         </div>
                         <div class="col-sm-8">
                             <div class="thumb-caption">
-                                <h3>WGU Mobile App</h3>
-                                <div class="description">
-                                    <div class="circle csharp"></div><span>C#</span>
-                                    <div class="circle xamarin"></div><span>Xamarin</span>
-                                </div>
-                                <h6>Here are screenshots from my mobile application built in C# using Xamarin. This app was built for one of my assignments at Western Governors Univeristy. The app is for students to keep track of their terms, courses, and assessments.
-                                </h6>  
+                                <h3>WGU Mobile App Course</h3>
+                                <h6>This app is built in C# and Xamarin. I have a local sqlite database that stores a students information about their term and courses. </h6>
                                 <br>
-                                <h6>I am using a sqlite db on the phone to store the students information. When you schedule an assessment you will be given a reminder notification on the phone.</h6>   
-                                <div class="bottom_align"></div> 
-                                <p>Note: Not available for download. Please contact me if you require further information.</p>                                                        
-                            </div>                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p><a href="https://github.com/Drex0/shuttle-service" class="btn btn-default btn-block btn-lg"
+                                                role="button">GitHub Link</a></p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                
                         </div>
                     </div>
                 </div>
-
-                <div class="well">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="thumbnail thumbs">
-                                <img src="img/Inventory.PNG" alt="inventory app overview">
-                                <img src="img/Inventory_Modify.PNG" alt="inenvtory app modify part page">
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="thumb-caption">
-                                <h3>WGU C# Inventory Application</h3>
-                                <div class="description">
-                                    <div class="circle csharp"></div><span>C#</span>
-                                    <div class="circle wpf"></div><span>WPF</span>
-                                </div>
-                                <h6>This is an application to keep track of products and parts in a product. You can add, edit, and modify each part as well as add them to a specific product. This makes use of DataGridViews and BindingLists.
-                                </h6>         
-                                <div class="bottom_align"></div> 
-                                <p>Note: Not available for download. Please contact me if you require further information.</p>                                                                               
-                            </div>                
-                        </div>
-                    </div>
-                </div>
-
-                <div class="well">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="thumbnail thumbs">
-                                <img src="img/Pi_Slideshow.PNG" alt="Pi Slideshow">
-                            </div>                            
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="thumb-caption">
-                                <h3>Pi Slideshow Inventory</h3>
-                                <div class="description">
-                                    <div class="circle htmllang"></div><span>HTML</span>
-                                    <div class="circle javascript"></div><span>Javascript</span>
-                                    <div class="circle nodejs"></div><span>NodeJS</span>
-                                </div>
-                                <h6>We have multiple Raspberry Pi's that run slideshows through out the office. They have a custom api that monitors certain directories. It looks
-                                    for certain files in these directories that tell it when to cache new images for the slides or reboot the unit. The Pi's also report in so we can see
-                                    when they were last updated.
-                                </h6>
-                                <br>
-                                <h6>I made a simple web app to pull the inventory list and tell me if the units are currently online and also offer a few controls of the units. I would like to add
-                                    a drag and drop area so I can easily upload new files here.
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="well">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="thumbnail thumbs">
-                                <img src="img/dc1.PNG" alt="Grafana Dashboard">
-                            </div>
-                            <div class="thumbnail thumbs">
-                                <img src="img/dc2.PNG" alt="Grafana Dashboard2">
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="thumb-caption">
-                                <h3>Grafana Dashboards</h3>
-                                <div class="description">
-                                    <div class="circle javascript"></div><span>Javascript</span>
-                                    <div class="circle svg"></div><span>SVG</span>
-                                </div>
-                                <h6>I built a few Grafana dashboards to monitor our Datacenter environment. It pulls information via SNMP and provides alerts through an SMTP relay. The layout view is 
-                                    an SVG map of all the temperature probes in the room and update based on the temperature value. The green indicates temp is normal. 
-                                    Red would be an alert and Yellow or Blue would be a warning.
-                                </h6>
-                                <br>
-                                <h6>
-                                    The rack locations also show the current temperature reading at that probe.
-                                </h6>
-                                <br>
-                                <h6>I used Telegraf to gather
-                                SNMP info from devices and store it in InfluxDb. Grafana is the front end for display.</h6>                                
-                            </div>                
-                        </div>
-                    </div>
-                </div>
-
 
 				<div class="well">
                     <div class="row">
@@ -357,23 +184,19 @@
                         <div class="col-sm-8">
                             <div class="thumb-caption">
                               <h3>Shuttle Location</h3>
-                              <div class="description">
-                                <div class="circle htmllang"></div><span>HTML</span>
-                                <div class="circle javascript"></div><span>Javascript</span>
-                                <div class="circle css"></div><span>CSS</span>
-                            </div>
-                              <h6>Web app that checks your Geo location against pre defined stops and shows you the closest shuttle stop and how much time left until the next shuttle arrives.</h6>
+                              <h6>Web app that checks your Geo Location against pre defined stops and shows you the closest shuttle stop and how much time left until the next shuttle arrives.</h6>
                               <br>
                               <h6>Optionally select the drop down to see all stops.</h6>
                               <div class="row">    
                                 <div class="col-sm-6">
-                                    <p><a href="https://github.com/Drex0/shuttle-service" target="_blank" class="btn btn-default btn-block btn-lg" role="button">GitHub Link</a></p>
+                                    <p><a href="https://github.com/Drex0/shuttle-service" class="btn btn-default btn-block btn-lg" role="button">GitHub Link</a></p>
                                 </div>
                                 <div class="col-sm-6">
                                     <p></p>
                                 </div>
                             </div>
-                            </div>                                                                                       
+                            </div>
+                                                                                       
                         </div>
                     </div>
                 </div>
@@ -387,15 +210,12 @@
                         <div class="col-sm-8">
                             <div class="thumb-caption">
                               <h3>Daily Time Charge Code Tracker</h3>
-                              <div class="description">
-                                <div class="circle autoit"></div><span>AutoIT</span>
-                            </div>
                               <h6>Simple program to help me keep track of daily time code activites. Enter in the time you worked and a descpition and it to the list. At the end of the day you can export it to an xlsx file.</h6>
                               <br>
                               <h6>The date is adjustable. The Time field is required and the description field is not required. Other allows you to add a specific time code not listed.</h6>
                               <div class="row">    
                                 <div class="col-sm-6">
-                                    <p><a href="https://github.com/Drex0/ChargeCode" target="_blank" class="btn btn-default btn-block btn-lg" role="button">GitHub Link</a></p>
+                                    <p><a href="https://github.com/Drex0/ChargeCode" class="btn btn-default btn-block btn-lg" role="button">GitHub Link</a></p>
                                 </div>
                                 <div class="col-sm-6">
                                     <p></p>
@@ -416,11 +236,7 @@
                         <div class="col-sm-8">
                             <div class="thumb-caption">
                               <h3>BSS Chassis Configurator</h3>
-                              <div class="description">
-                                <div class="circle csharp"></div><span>C#</span>
-                                <div class="circle wpf"></div><span>WPF</span>
-                            </div>
-                              <h6>I needed a quick way to count inputs and outputs for a BSS Soundweb London system without doing it in my head.</h6>
+                              <h6>This was a small C# app used as a quick way to count inputs and outputs for a BSS Soundweb London system without doing it in my head. I was able to use this on support calls or designing systems.</h6>
                             </div>
                                                                                        
                         </div>
@@ -436,9 +252,6 @@
     					<div class="col-sm-8">
                             <div class="thumb-caption">
     						  <h3>BSS and Crestron v4.2</h3>
-                              <div class="description">
-                                <div class="circle simplplus"></div><span>Simpl+</span>
-                            </div>
     						  <h6>This is a Simpl+ module I created to work with the existing 4.2 modules BSS offers. This is used to control the BLU103 and I also provide an example file. I utilize the new DI String protocol for setting and getting the phone number, caller ID, and speed dials.</h6>
                             </div> 
                             <div class="row">    
@@ -462,19 +275,9 @@
                         <div class="col-sm-8">
                             <div class="thumb-caption">
                               <h3>BSS and AMX</h3>
-                              <div class="description">
-                                <div class="circle netlinx"></div><span>Netlinx</span>
-                            </div>
                               <h6>The existing #include file for AMX control of BSS devices, didn't have the DI String protocol or the ability to control the BLU103 so I added these features.</h6>
                             </div>     
-                            <div class="row">    
-                                <div class="col-sm-6">
-                                    <p><a href="downloads/_RELEASE_BSS_Audio_Soundweb_London_AMX_v2.4.zip" class="btn btn-default btn-block btn-lg" role="button">Download</a></p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p></p>
-                                </div>
-                            </div>                 
+                              
                         </div>
                     </div>
                 </div>
@@ -488,15 +291,8 @@
                         <div class="col-sm-8">
                             <div class="thumb-caption">
                               <h3>BSS and Node-Red</h3>
-                              <div class="description">
-                                <div class="circle javascript"></div><span>Javascript</span>
-                                <div class="circle json"></div><span>JSON</span>
-                            </div>
-                            <div>
                               <h6>Example flow to hard code mute controls into Node-Red. There are many ways to do this here is one way.</h6>
-                              <h6>I am working on a config module so check back later if you need more features.</h6>   
-                              <br>
-                              <h6>If you want to take a look at it, copy paste the below code into a Node-Red environment.</h6>                           
+                              <h6>I am working on a config module so check back later if you need more features.</h6>                              
                               <pre>                                
                                 <code class="codecopy">[{"id":"93bed85f.4b55a8","type":"function","z":"9030ce.c4382f3","name":"Mute FB","func":"msg.payload = msg.payload[15];\nif (msg.payload ==0) {\n    node.status({fill:\"white\",shape:\"ring\",text:\"Unmuted\"});\n} else if(msg.payload ==1) {\n    node.status({fill:\"red\",shape:\"ring\",text:\"Muted\"});\n}\nreturn msg;","outputs":1,"noerr":0,"x":680,"y":240,"wires":[["193d7ed7.142ba1"]]},{"id":"193d7ed7.142ba1","type":"debug","z":"9030ce.c4382f3","name":"","active":true,"console":"false","complete":"payload","x":870,"y":240,"wires":[]},{"id":"170c7e10.27d0b2","type":"tcp request","z":"9030ce.c4382f3","server":"10.34.66.69","port":"1023","out":"time","splitc":"0","name":"BSS","x":530,"y":240,"wires":[["93bed85f.4b55a8"]]},{"id":"a35bfb9e.f46ab8","type":"comment","z":"9030ce.c4382f3","name":"BSS fixed control with Subscribe","info":"These are fixed commands for muting/unmuting. Strings are pulled from Audio Architects 3rd Party Controller. \n\n- Feedback string is piggy backed with the set command.\n    - Doesn't update from unsolicited feedback.\n- Commands from buffer in function are in hex.","x":410,"y":160,"wires":[]},{"id":"55e77944.b38a78","type":"inject","z":"9030ce.c4382f3","name":"Muted","topic":"","payload":"true","payloadType":"bool","repeat":"","crontab":"","once":false,"x":170,"y":220,"wires":[["dec7b2f4.86a0e"]]},{"id":"22b4680d.27a1a8","type":"inject","z":"9030ce.c4382f3","name":"Unmuted","topic":"","payload":"false","payloadType":"bool","repeat":"","crontab":"","once":false,"x":160,"y":260,"wires":[["dec7b2f4.86a0e"]]},{"id":"dec7b2f4.86a0e","type":"function","z":"9030ce.c4382f3","name":"Mute State Control","func":"if(msg.payload==0){\n    msg.payload = new Buffer([0x02, 0x88, 0x00, 0x1B, 0x82, 0x1B, 0x83, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x89, 0x03, 0x02, 0x89, 0x00, 0x1B, 0x82, 0x1B, 0x83, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x88, 0x03]);\n    node.status({fill:\"white\",shape:\"ring\",text:\"Unmuted\"});\n}else if(msg.payload==1){\n    msg.payload = new Buffer([0x02, 0x88, 0x00, 0x1B, 0x82, 0x1B, 0x83, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x88, 0x03, 0x02, 0x89, 0x00, 0x1B, 0x82, 0x1B, 0x83, 0x00, 0x01, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x88, 0x03]);\n    node.status({fill:\"red\",shape:\"ring\",text:\"Muted\"});\n}else {\n    msg.payload = \"Check Input\";\n}\nreturn msg;","outputs":1,"noerr":0,"x":350,"y":240,"wires":[["170c7e10.27d0b2"]]}]</code>
                               </pre>
@@ -510,13 +306,13 @@
     </section>
 
     <!-- Personal Section  -->
-    <section id="personal" >
+    <section id="personal" class="text-center">
         <div class="projects-section">
             <div class="container">
-                <div class="text-center">
-                    <h2>Personal</h2>
-                    <p>Side stuff I'm working on.</p>
-                </div>
+                <h2>Personal</h2>
+                <p>Side stuff I'm working on.</p>
+
+
                 <div class="well">
                     <div class="row">
                         <div class="col-sm-4">                            
@@ -526,12 +322,9 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="thumb-caption">
-                                <div>
-                                    <h3>Zachman Crest Table</h3>
-                                    <br>
-                                    <h6>I wanted a nice coffee table so I made one.</h6><h6>First I designed the family crest logo. Then I built this basic table and carved out the crest. I took some time to silver leaf the emblem and then put a thick coat of resin to help protect it. Here is an image after I applied the resin to the table.</h6>
-                                    <h6>I'm still working on adding a nice leather pad around the outside for a place to put my feet and so the kid doesn't knock her head on it.</h6>
-                                </div>
+                              <h3>Zachman Crest Table</h3>
+                              <h6>I wanted a nice coffee table so I made one.</h6><h6>First I designed the family crest logo. Then I built this basic table and carved out the crest. I took some time to silver leaf the emblem and then put a thick coat of resin to help protect it. Here is an image after I applied the resin to the table.</h6>
+                              <h6>I'm still working on adding a nice leather pad around the outside for a place to put my feet and so the kid doesn't knock her head on it.</h6>
                             </div>                                                                                
                         </div>
                     </div>
@@ -564,7 +357,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-                <p>Copyright &copy; Zachman 2021</p>
+                <p>Copyright &copy; Team Zachman 2016</p>
                 <img src="img/United-States.png" alt="US Flag">
                 <img src="img/utah-logo-footer.png" alt="Utah Life">
                 <img src="img/Utah.png" alt="Utah Flag">
@@ -587,9 +380,5 @@
     <script src="js/quotegen.js"></script>
 
 </body>
-
-<script>
-    
-</script>
 
 </html>
