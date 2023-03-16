@@ -118,6 +118,63 @@
         padding-bottom: 10px;
     }
 
+    .person {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    }
+    .imgcontainer {
+    border-radius: 50%;
+    height: 312px;
+    -webkit-tap-highlight-color: transparent;
+    transform: scale(0.48);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 400px;
+    }
+    .imgcontainer:after {
+    content: "";
+    height: 10px;
+    position: absolute;
+    top: 390px;
+    width: 100%;
+    }
+    .imgcontainer:hover {
+    transform: scale(0.54);
+    }
+    .imgcontainer-inner {
+    clip-path: path(
+        "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+    );
+    position: relative;
+    transform-origin: 50%;
+    top: -200px;
+    }
+    .imgcircle {
+    background-color: #fee7d3;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 380px;
+    left: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 210px;
+    width: 380px;
+    }
+    .imgbg {
+    pointer-events: none;
+    position: relative;
+    transform: translateY(20px) scale(1.15);
+    transform-origin: 50% bottom;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .imgcontainer:hover .imgbg {
+    transform: translateY(0) scale(1.2);
+    }
+    .img1 {
+        top: 200px;
+        width: 340px;
+    }
+
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)} 
     to {-webkit-transform:scale(1)}
@@ -194,7 +251,15 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About <span class="fa fa-hand-o-down"></span> this guy</h2>
-                <img src="img/portfolio-pat2.jpg" class="img-circle img-responsive center-block portfolio_pic">
+                <!--<img src="img/portfolio-pat2.jpg" class="img-circle img-responsive center-block portfolio_pic">-->
+                <div class="person">
+                    <div class="imgcontainer">
+                        <div class="imgcontainer-inner">
+                            <img src="img/zion-bg.JPG" alt="profile bg" class="imgcircle">
+                            <img src="img/ZachmanHeadshot_NoBG.png" alt="profile pic" class="imgbg img1">
+                        </div>
+                    </div>
+                </div>
                 <p>
                     I recently graduated from  <a href="https://www.wgu.edu/" target="_blank">Western Governors University</a> with a BS in Software Development. I went through the C# program and enjoyed pushing myself. I was also able to work in HTML, CSS, Javascript, and Python.
                 </p>
